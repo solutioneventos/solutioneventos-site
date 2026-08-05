@@ -1,143 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Solution Eventos</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f7f7f7;
-    color: #333;
-}
-
-header {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-header h1 {
-    font-size: 42px;
-    margin: 0;
-}
-
-header p {
-    font-size: 20px;
-    margin-top: 15px;
-}
-
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-.cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: white;
-    flex: 1;
-    min-width: 250px;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.card h2 {
-    color: #b08d2c;
-}
-
-.btn {
-    display: inline-block;
-    background: #b08d2c;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-.contact {
-    text-align: center;
-    background: white;
-    padding: 40px 20px;
-}
-
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-@media(max-width:700px){
-    header h1 {
-        font-size: 32px;
-    }
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution Eventos</title>
+    <!-- Estilos base com CSS moderno e responsivo -->
+    <style>
+        :root {
+            --bg-body: #f7f7f7; --card-color: #ffffff;
+            --brand-red: #ff1e27; --text-primary: #1a1a1a;
+        }
+        body { font-family: sans-serif; background: var(--bg-body); color: var(--text-primary); }
+        .site-header { position: fixed; top: 0; width: 100%; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header-container { max-width: 1000px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; }
+        .brand-name { font-weight: bold; }
+        .card { background: var(--card-color); padding: 20px; margin: 10px; border-radius: 8px; }
+        .btn { background: var(--brand-red); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+    </style>
 </head>
-
 <body>
-
-<header>
-    <h1>Solution Eventos</h1>
-    <p>Transformando momentos em experiências inesquecíveis</p>
-</header>
-
-<section class="container">
-
-    <div class="cards">
-
-        <div class="card">
-            <h2>Eventos Sociais</h2>
-            <p>
-            Casamentos, aniversários, formaturas e celebrações especiais.
-            Criamos experiências únicas para cada momento.
-            </p>
+    <header class="site-header">
+        <div class="header-container">
+            <span class="brand-name">Solution</span>
+            <nav><a href="#servicos">Serviços</a><a href="#contato">Contato</a></nav>
         </div>
-
-        <div class="card">
-            <h2>Eventos Corporativos</h2>
-            <p>
-            Estrutura completa para empresas, reuniões,
-            lançamentos e grandes encontros.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>Soluções Personalizadas</h2>
-            <p>
-            Planejamento, organização e execução para
-            transformar sua ideia em um evento de sucesso.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<section class="contact">
-    <h2>Entre em contato</h2>
-    <p>Solicite seu orçamento e vamos criar seu próximo evento.</p>
-
-    <a class="btn" href="https://wa.me/5500000000000">
-        Falar no WhatsApp
-    </a>
-</section>
-
-<footer>
-    © 2026 Solution Eventos - Todos os direitos reservados
-</footer>
-
+    </header>
+    <main style="margin-top: 80px;">
+        <section id="servicos">
+            <div class="card"><h2>Serviços</h2><p>Eventos Sociais e Corporativos.</p></div>
+        </section>
+        <section id="contato" style="text-align:center; padding: 20px;">
+            <a class="btn" href="https://wa.me" target="_blank">Falar no WhatsApp</a>
+        </section>
+    </main>
 </body>
 </html>
