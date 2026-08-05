@@ -121,11 +121,12 @@ a {
   z-index: 20;
 }
 
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 11px;
-  text-decoration: none;
+.brand-logo {
+  width: 210px;
+  height: 64px;
+  display: block;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .brand-mark {
