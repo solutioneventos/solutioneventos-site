@@ -105,10 +105,25 @@ a {
   gap: 20px;
 }
 
-.topbar a {
-  color: var(--gold-light);
-  font-weight: 700;
-  text-decoration: none;
+.topbar-whatsapp {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #25d366;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.topbar-whatsapp svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.topbar-whatsapp:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 16px rgba(37, 211, 102, 0.4);
 }
 
 .navbar {
