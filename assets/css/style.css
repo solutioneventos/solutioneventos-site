@@ -137,11 +137,11 @@ a {
 }
 
 .brand-logo {
-  width: 230px;
-height: 70px;
+  width: 250px;
+  height: 72px;
   display: block;
-  object-fit: contain;
-  object-position: left center;
+  object-fit: cover;
+  object-position: center;
 }
 
 .brand-mark {
