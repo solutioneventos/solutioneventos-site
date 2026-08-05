@@ -336,7 +336,7 @@ a {
   position: relative;
 }
 .hero-photo-showcase {
-  width: min(100%, 560px);
+  width: min(100%, 640px);
   aspect-ratio: 16 / 10;
   overflow: hidden;
   border: 1px solid rgba(241, 206, 104, 0.25);
