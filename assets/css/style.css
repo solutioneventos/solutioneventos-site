@@ -1079,6 +1079,14 @@ height: 70px;
   color: var(--muted);
 }
 
+.footer-logo {
+  width: 220px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  object-position: left center;
+}
+
 .footer-grid > div:not(.footer-brand) {
   display: grid;
   align-content: start;
